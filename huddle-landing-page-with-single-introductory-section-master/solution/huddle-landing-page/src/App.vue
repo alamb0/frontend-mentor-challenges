@@ -25,10 +25,10 @@ import Button from './components/Button.vue';
     <font-awesome-icon icon="fa-brands fa-instagram" size="2x"/>
   </footer>
 
-  <!-- <p class="attribution">
+  <p class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Austin Lamb</a>.
-  </p> -->
+    Coded by <a href="https://github.com/alamb0" target="_blank" rel="noopener noreferrer">Austin Lamb</a>.
+  </p>
 </template>
 
 <style scoped>
@@ -66,8 +66,8 @@ footer > * {
   padding: 10px;
 }
 
-/* .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
 
 @media (min-width: 1024px) {
   header {
