@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { NotificationTypes } from "../pages/NotificationPage";
 
@@ -85,7 +85,7 @@ function NotificationMessage(props) {
   const formatMessage = (message) => {
     if (props.links) {
       const {
-        groups: { type, id },
+        groups: { id },
       } = /{{(?<type>.*)::(?<id>.*)}}/gm.exec(message);
 
       return (
