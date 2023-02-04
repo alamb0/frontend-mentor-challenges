@@ -41,3 +41,20 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com)
+
+TODO: Layout redesign
+<container>
+    <header>
+    <main>
+    <footer>
+</container>
+
+.container {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+.main {
+    flex: 1;
+}
