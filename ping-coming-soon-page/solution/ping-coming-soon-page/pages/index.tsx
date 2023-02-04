@@ -50,7 +50,7 @@ export default function Home() {
             className={clsx(styles.emailInput)}
             placeholder='Your email address...'
             aria-invalid={errors.email ? "true" : "false"}
-            {...register('email', { required: true, maxLength: 30 })}
+            {...register('email')}
             />
             <button type="submit" className={styles.notifyButton}>Notify Me</button>
             <div>
