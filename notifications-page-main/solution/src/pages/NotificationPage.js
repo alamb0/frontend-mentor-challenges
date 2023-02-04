@@ -63,7 +63,7 @@ export const NotificationSubTypes = {
 };
 
 export default function NotificationPage() {
-  const [totalNotifications, setTotalNotifications] = useState(0);
+  const [totalActiveNotifications, setTotalActiveNotifications] = useState(0);
   const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
@@ -188,8 +188,9 @@ export default function NotificationPage() {
       },
     ];
 
+    document.title = "Notifications";
     setNotifications(notifications);
-    setTotalNotifications(notifications.filter((n) => n.isActive).length);
+    setTotalActiveNotifications(notifications.filter((n) => n.isActive).length);
   }, []);
 
   const handleReadAll = () => {
@@ -198,14 +199,14 @@ export default function NotificationPage() {
     );
 
     setNotifications(nextNotifications);
-    setTotalNotifications(0);
+    setTotalActiveNotifications(0);
   };
 
   return (
     <NotificationWrapper>
       <NotificationHeader>
         <h1>Notifications</h1>
-        <NotificationTotal total={totalNotifications} />
+        <NotificationTotal total={totalActiveNotifications} />
         <ReadAllButton onClick={handleReadAll}>Mark all as read</ReadAllButton>
       </NotificationHeader>
       <NotificationContainer>
