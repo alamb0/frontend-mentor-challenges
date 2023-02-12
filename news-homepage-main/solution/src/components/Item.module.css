@@ -1,0 +1,26 @@
+.Item {
+    display: flex;
+    color: var(--neutral-dark-grayish-blue);
+}
+
+.Item>img {
+    max-width: 100%;
+    height: 200px;
+}
+
+.ItemContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.Number {
+    color: var(--neutral-grayish-blue);
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.Title {
+    color: black;
+}
